@@ -1,10 +1,10 @@
 import unittest
-from logic.client import Client
-from logic.package import Package
-from logic.invoice import Invoice
-from logic.shipment import Shipment
-from logic.shipment_details import Shipment_details
-from logic.traceability import Traceability
+from client import Client
+from package import Package
+from invoice import Invoice
+from shipment import Shipment
+from shipment_details import Shipment_details
+from traceability import Traceability
 
 
 class TestClient(unittest.TestCase):
