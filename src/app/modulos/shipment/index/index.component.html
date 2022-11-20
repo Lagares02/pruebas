@@ -1,0 +1,24 @@
+<table class="responsive-table" class="highlight">
+    <thead>
+      <tr>
+          <th>Id</th>
+          <th>Fecha envio</th>
+          <th>Id persona destino</th>
+          <th>Direccion destino</th>
+          <th>Fecha llegada</th>
+          <th>Id cliente</th>
+          <th>Id detalle de envio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let shipment of shipments">
+        <td>{{shipment.ShipmentID}}</td>
+        <td>{{shipment.DateCreated}}</td>
+        <td>{{shipment.IDDestinityPerson}}</td>
+        <td>{{shipment.DestinationAddress}}</td>
+        <td>{{shipment.EstimatedArrivalDate}}</td>
+        <td>{{shipment.ClientID}}</td>
+        <td>{{shipment.DetailShipping}}</td>
+      </tr>
+    </tbody>
+</table>

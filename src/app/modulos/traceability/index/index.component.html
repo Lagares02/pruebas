@@ -1,0 +1,20 @@
+<table class="responsive-table" class="highlight">
+    <thead>
+      <tr>
+          <th>Codigo rastreo</th>
+          <th>Descripcion</th>
+          <th>Fecha</th>
+          <th>Hora</th>
+          <th>Id envio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let traceability of traceabilitys">
+        <td>{{traceability.TrackingCode}}</td>
+        <td>{{traceability.Description}}</td>
+        <td>{{traceability.Date}}</td>
+        <td>{{traceability.Hour}}</td>
+        <td>{{traceability.ShippingID}}</td>
+      </tr>
+    </tbody>
+</table>

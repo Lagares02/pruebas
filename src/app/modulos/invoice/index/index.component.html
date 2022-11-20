@@ -1,0 +1,26 @@
+<table class="responsive-table" class="highlight">
+    <thead>
+      <tr>
+          <th>Id</th>
+          <th>Id envio</th>
+          <th>Id paquete</th>
+          <th>Fecha</th>
+          <th>Cantidad</th>
+          <th>Subtotal</th>
+          <th>Gasto envio</th>
+          <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let invoice of invoices">
+        <td>{{invoice.InvoiceID}}</td>
+        <td>{{invoice.ShipmentID}}</td>
+        <td>{{invoice.PackID}}</td>
+        <td>{{invoice.FactDate}}</td>
+        <td>{{invoice.Quantity}}</td>
+        <td>{{invoice.Subtotal}}</td>
+        <td>{{invoice.ShippingCost}}</td>
+        <td>{{invoice.Total}}</td>
+      </tr>
+    </tbody>
+</table>

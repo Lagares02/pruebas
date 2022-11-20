@@ -1,0 +1,20 @@
+<table class="responsive-table" class="highlight">
+    <thead>
+      <tr>
+          <th>Id</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Direccion</th>
+          <th>Telefono</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of clients">
+        <td>{{client.ClientID}}</td>
+        <td>{{client.Name}}</td>
+        <td>{{client.Surname}}</td>
+        <td>{{client.Direction}}</td>
+        <td>{{client.Phone}}</td>
+      </tr>
+    </tbody>
+</table>

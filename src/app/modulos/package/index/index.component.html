@@ -1,0 +1,22 @@
+<table class="responsive-table" class="highlight">
+    <thead>
+      <tr>
+          <th>Id</th>
+          <th>Dimensiones</th>
+          <th>Peso</th>
+          <th>Tipo</th>
+          <th>Condicion</th>
+          <th>Observaciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let package of packages">
+        <td>{{package.PackID}}</td>
+        <td>{{package.Dimensions}}</td>
+        <td>{{package.Weigth}}</td>
+        <td>{{package.Type}}</td>
+        <td>{{package.Condition}}</td>
+        <td>{{package.Observations}}</td>
+      </tr>
+    </tbody>
+</table>
