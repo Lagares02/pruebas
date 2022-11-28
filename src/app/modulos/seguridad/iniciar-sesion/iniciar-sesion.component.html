@@ -1,1 +1,61 @@
-<p>iniciar-sesion works!</p>
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+   <style>
+        .bg{
+            background-image: url(https://i.pinimg.com/originals/c7/2b/6a/c72b6acfab54bfe0270e87a338192edf.jpg);
+            background-position: center center;
+        }
+   </style>
+</head>
+<body>
+    <div class="container w-75 mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6">
+                
+            </div>
+            <div class="col bg-white p-5 rounded-end">
+                <div class="d-flex justify-content-center">
+                <i class="large material-icons">account_circle</i>
+                </div>
+              <h2 class="fw-bold text-center py-5"> Welcome admin </h2>
+              <form action="#">
+                  <div class="mb-4 input-group-text">
+                      <i class="small material-icons">email</i>
+                      <input type="email" class="form-control" list="datalistOptions" id="emailadmin" placeholder=" email address">
+                      <datalist id="datalistOptions">
+                        <option value="hlagares@utb.edu.co">
+                      </datalist>
+                  </div>
+                  <div class="mb-4 input-group-text">
+                    <i class="small material-icons">lock</i>
+                    <input type="password" class="form-control" id="passwordadmin" placeholder=" password">
+                </div>
+                  <form action="#">
+                    <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" checked="checked" />
+                        <span>Remember me</span>
+                    </label>
+                    </p>
+                  </form>
+                  <div class="d-grid">
+                      <button type="submit" class="btn btn-primary" routerLink="/inicio">Login</button>
+                  </div>
+                  <div class="my-3">
+                      <span>Don't have an account? <a href="#">Register</a></span> <br>
+                      <span><a href="#">Forgot your password?</a></span>
+                  </div>
+              </form>
+            </div>
+          </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
